@@ -1,11 +1,12 @@
-# VA_research
+# kitchen monitor demo
 - In this research, we use the YOLOv8 pose detection algorithm to identify the chef's body frame and 17 key points for precise action recognition. These actions are primarily categorized into three classes: standing, crouching, and temperature measurement. Subsequently, these actions are classified and recognized using a Random Forest classifier.
 - We have achieved real-time monitoring of the chef's status and accurate identification of the chef when they move to the cooking location and begin measuring food temperature. Once this action is recognized, the camera interacts with the chef, providing relevant information. 
 
-```python=
-git clone https://github.com/nexuni/VA_research.git
-cd VA_research
-```
+
+https://github.com/milk333445/kitchen_monitor/assets/72238891/78cf8a7e-ed27-4fd4-86b9-4831f3fdd63c
+
+
+
 ## files explanation
 - main files
   - classification_label.py: 
@@ -28,6 +29,10 @@ Here are the parameters you can configure in the detect_multithread.py script:
 - detect_threshold: Specify the detection threshold for action recognition.
 - confidence_threshold: Set the confidence threshold for action classification(inorder to let the output stable).
 ## quick start
+```python=
+git clone https://github.com/milk333445/kitchen_monitor.git
+cd kitchen_monitor
+```
 - Prepare the official pre-trained weights for YOLOv8 pose.
 - Prepare the classifier weights (which can be trained using the classification_label.py script).
 - Ensure that the necessary packages are installed.
